@@ -6,7 +6,6 @@ languageCode = "en"
 title = "Max Garin"
 
 description = "Max's slice of the internet"
-defaultTheme = "dark"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -14,6 +13,14 @@ theme = "LoveIt"
 [params]
   # LoveIt theme version
   version = "0.2.X"
+  defaultTheme = "dark"
+
+[params.social]
+  GitHub = "garinm90"
+  email = "maxgarin@gmail.com"
+  Facebook = "max.garin"
+  Instagram = "4realmax"
+
 
 [menu]
   [[menu.main]]
@@ -44,6 +51,76 @@ theme = "LoveIt"
     title = ""
     weight = 3
 
+# Header config
+[params.header]
+  # desktop header mode ("fixed", "normal", "auto")
+  desktopMode = "fixed"
+  # mobile header mode ("fixed", "normal", "auto")
+  mobileMode = "auto"
+  # LoveIt NEW | 0.2.0 Header title config
+  [params.header.title]
+    # URL of the LOGO
+    logo = ""
+    # title name
+    name = "Max Garin"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
+    typeit = false
+
+[params.home]
+    # LoveIt NEW | 0.2.0 amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = "images/me.png"
+      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page
+      subtitle = "Hi I'm Max, and I love creating software to solve problems."
+      # whether to use typeit animation for subtitle
+      typeit = false
+      # whether to show social links
+      social = true
+      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
+      # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false
+
+[params.footer]
+    enable = true
+    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
+    custom = ''
+    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
+    hugo = false
+    # LoveIt NEW | 0.2.0 whether to show copyright info
+    copyright = true
+    # LoveIt NEW | 0.2.0 whether to show the author
+    author = true
+    # Site creation time
+    since = 2020
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license = ''
+
+
+[author]
+  name = "Max Garin"
+  email = "maxgarin@gmail.com"
+  link = "https://wwww.maxgarin.com"
 # Markup related configuration in Hugo
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
