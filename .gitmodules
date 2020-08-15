@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/garinm90/garinm90.github.io.git
+	branch = master
