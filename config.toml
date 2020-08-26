@@ -14,12 +14,33 @@ theme = "LoveIt"
   # LoveIt theme version
   version = "0.2.X"
   defaultTheme = "dark"
+  gitRepo = "https://github.com/garinm90/blog"
+  dateFormat = "02-01-2006"
 
 [params.social]
   GitHub = "garinm90"
   email = "maxgarin@gmail.com"
   Facebook = "max.garin"
   Instagram = "4realmax"
+  RSS = true
+
+[params.page]
+  fraction = true
+  linkToMarkdown = true
+  rssFullText = false
+  [params.page.toc]
+    enable = true
+    keepStatic = true
+    auto = true
+  [params.page.code]
+    copy = true
+    maxShownLines = 10
+  [params.page.share]
+    enable = true
+    Twitter = true
+    Facebook = true
+[params.cookieconsent]
+  enable = true
 
 
 [menu]
@@ -116,12 +137,23 @@ theme = "LoveIt"
     # license info (HTML format is supported)
     license = ''
 
+[params.section]
+  dateFormat = "02-01"
+  paginate = 20
+  rss = 10
+
 
 [author]
   name = "Max Garin"
   email = "maxgarin@gmail.com"
   link = "https://wwww.maxgarin.com"
 # Markup related configuration in Hugo
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
